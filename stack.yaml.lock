@@ -3,10 +3,24 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: MissingH-1.6.0.1@sha256:4e2cb9fd4eff3616ada0ac8aea2b1af49ae7cfac09f0426753c6a1fcb51e9d01,4697
+    pantry-tree:
+      sha256: 84ab88c326a6b678c277cb184e0bacc37145a1363e5eb20b746c8d66c80d1a3d
+      size: 5272
+  original:
+    hackage: MissingH-1.6.0.1@sha256:4e2cb9fd4eff3616ada0ac8aea2b1af49ae7cfac09f0426753c6a1fcb51e9d01,4697
+- completed:
+    hackage: hspec-2.7.10@sha256:c9e82c90086acebac576552a06f3cabd249bba048edd1667c7fae0b1313d5bce,1712
+    pantry-tree:
+      sha256: c67dad42129f684b8d21deb0d2948d88618a287fe6a7ae235a232959bfe313df
+      size: 583
+  original:
+    hackage: hspec-2.7.10
 snapshots:
 - completed:
-    size: 500539
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/13/28.yaml
-    sha256: cdde1bfb38fdee21c6acb73d506e78f7e12e0a73892adbbbe56374ebef4d3adf
-  original: lts-13.28
+    sha256: c632012da648385b9fa3c29f4e0afd56ead299f1c5528ee789058be410e883c0
+    size: 585393
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/0.yaml
+  original: lts-18.0
