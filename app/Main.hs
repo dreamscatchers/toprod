@@ -24,8 +24,11 @@ readConf = do
   exist <- doesFileExist filename
   if exist then do
     s <- readFile filename
-    return (lines s ++ [".*"])
-  else return [".*"] 
+    let patterns = map (filter (/= '\r')) (lines s) ++ [".*"] -- Remove '\r'
+    return patterns
+  else do
+    putStrLn "No .prodignore found. Using default pattern: .*"
+    return [".*"]
 
 main :: IO ()
 main = do
